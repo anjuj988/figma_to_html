@@ -101,7 +101,7 @@ class OCRService:
             content_type=file.content_type,
             bucket_name=minio_storage.bucket_name
         )
-
+ #121122
         mime_type, _ = mimetypes.guess_type(file.filename)
         # Process based on file type
         if file.content_type.startswith('image/') or mime_type.startswith('image/'):
